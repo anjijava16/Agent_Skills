@@ -82,7 +82,72 @@ skill-name/
 - [Best Practices](https://agentskills.io/skill-creation/best-practices)
 - [Example Skills (GitHub)](https://github.com/anthropics/skills)
 
+## Public Skills & Community Resources
 
+Free, open-source skills you can install directly into your projects.
+
+### Official Repositories
+
+| Repository | Stars | Description |
+|---|---|---|
+| [anthropics/skills](https://github.com/anthropics/skills) | 105k | Official Anthropic skills — webapp-testing, MCP builder, PDF, XLSX, PPTX, document skills |
+| [agentskills/agentskills](https://github.com/agentskills/agentskills) | 14.4k | The Agent Skills specification, documentation, and reference SDK |
+| [github/awesome-copilot](https://github.com/github/awesome-copilot) | - | Community instructions, agents, and skills for GitHub Copilot |
+
+### Curated Skill Collections
+
+| Repository | Description |
+|---|---|
+| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 1000+ skills from official dev teams and community — code review, testing, and more |
+| [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | 5,400+ skills filtered and categorized from the OpenClaw registry |
+| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 1,326+ installable skills with CLI installer — code review, git hooks, and more |
+| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | Curated skills, hooks, slash-commands, and agent orchestrators |
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Curated list of Claude skills, resources, and tools |
+| [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 192+ skills — engineering, marketing, product, compliance, C-level advisory |
+
+### Code Review & Development Skills
+
+| Repository | Description |
+|---|---|
+| [gitstq/awesome-ai-agent-skills](https://github.com/gitstq/awesome-ai-agent-skills) | 4 production-grade skills including **Code Review Engine** + self-improving memory |
+| [vickhunter/pr-rules-sync](https://github.com/vickhunter/pr-rules-sync) | Scans merged PRs to auto-extract code review rules as a reusable skill |
+
+### Domain-Specific Skills
+
+| Repository | Description |
+|---|---|
+| [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | Research, science, engineering, analysis, finance, and writing |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 100+ product management skills — discovery, strategy, execution, launch, growth |
+
+### Skill Builders & Platforms
+
+| Repository | Description |
+|---|---|
+| [refly-ai/refly](https://github.com/refly-ai/refly) | Open-source agent skills builder — define skills by vibe workflow, run on Claude Code, Cursor, Codex |
+
+### Browse All
+
+- **GitHub Topic**: [github.com/topics/agent-skills](https://github.com/topics/agent-skills) — **2,212+ public repositories** and growing
+- **Discord Community**: [discord.gg/MKPE9g8aUy](https://discord.gg/MKPE9g8aUy) — discuss skills with the community
+
+### How to Install a Public Skill
+
+```bash
+# Clone and copy into your project
+git clone https://github.com/anthropics/skills.git /tmp/anthropic-skills
+cp -r /tmp/anthropic-skills/skills/webapp-testing .agents/skills/
+
+# Or clone an entire collection
+git clone https://github.com/VoltAgent/awesome-agent-skills.git /tmp/awesome-skills
+cp -r /tmp/awesome-skills/skills/code-review .agents/skills/
+
+# Or symlink for easy updates
+ln -s /path/to/cloned/skill .agents/skills/skill-name
+```
+
+> **Note**: There are no dedicated standalone "java-code-review" or "python-code-review" skills published yet. The general code-review skills in the collections above work for all languages. For language-specific patterns, create your own skill using `my-skill/` as a template.
+
+---
 
 # 🧠 Agent vs Skills vs Tools — Complete Deep Dive (Beginner → Advanced → Expert)
 
