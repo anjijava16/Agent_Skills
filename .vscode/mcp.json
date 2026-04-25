@@ -28,6 +28,18 @@
             "type": "http",
             "url": "https://pubmed.mcp.claude.com/mcp"
         },
+        "mermaidchart": {
+            "type": "http",
+            "url": "https://mcp.mermaidchart.com/mcp"
+        },
+        "webcrawl_sse": {
+            "type": "http",
+            "url": "http://0.0.0.0:7084/sse"
+        },
+    //      "webcrawl": {
+    //         "command": "/Users/welcome/Desktop/sai_welcome_hanuman/mcp/webcrawl-mcp/.venv/bin/python",
+    //         "args": ["-m", "webcrawl_mcp"]
+    // }
         // "redis": {
         //   "command": "npx",
         //   "args": [
@@ -43,7 +55,27 @@
         "coingecko": {
             "type": "http",
             "url": "https://mcp.api.coingecko.com/sse"
-        }
+        },
+        "amplitude": {
+            "type": "http",
+            "url": "https://mcp.amplitude.com/mcp"
+        },
+    "docs-langchain": {
+      "type": "http",
+      "url": "https://docs.langchain.com/mcp"
+    },
+     "mcp-claude": {
+      "type": "http",
+      "url": "https://code.claude.com/docs/en/mcp"
+    },
+    "reference-langchain": {
+      "type": "http",
+      "url": "https://reference.langchain.com/mcp"
+    },
+    "math-tools": {
+      "type": "http",
+      "url": "http://localhost:8217/mcp",
+      "headers": { "Authorization": "Bearer admin-token-456" }
     }
 }
 // Microsoft MCP API Endpoints:

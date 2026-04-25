@@ -1,1 +1,4 @@
 claude-agent-sdk
+deepagents
+langgraph
+langchain-openai
