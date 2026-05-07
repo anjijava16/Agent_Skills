@@ -8,22 +8,25 @@
 
 Antigravity Kit is a modular system consisting of:
 
-- **20 Specialist Agents** - Role-based AI personas
-- **~660 Skills** - Domain-specific knowledge modules across 25+ categories
-- **16 Workflows** - Slash command procedures
+- **~200 Specialist Agents** - Role-based AI personas across all domains
+- **~970 Skills** - Domain-specific knowledge modules across 40+ categories
+- **20 Global Workflows** - Slash command procedures
+- **53 Plugins** - Bundled multi-agent/skill packs
+- **1 Rule File** - Global behavior control (GEMINI.md)
 
 ---
 
 ## 🏗️ Directory Structure
 
 ```plaintext
-.agent/
+.github/
 ├── ARCHITECTURE.md          # This file
-├── agents/                  # 20 Specialist Agents
-├── skills/                  # ~660 Skills
-├── workflows/               # 16 Slash Commands
-├── rules/                   # Global Rules
-└── scripts/                 # Master Validation Scripts
+├── agents/                  # ~200 Specialist Agents
+├── skills/                  # ~970 Skills
+├── global_workflows/        # 20 Slash Commands
+├── plugins/                 # 53 Bundled Plugin Packs
+├── rules/                   # Global Rules (GEMINI.md)
+└── .curos/                  # Cursor IDE configuration
 ```
 
 ---
